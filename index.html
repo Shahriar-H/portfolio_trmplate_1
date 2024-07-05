@@ -338,8 +338,17 @@
     .navLeft {
       top: 0px !important;
     }
-
-
+    .navMain a{
+      background: #ffffff1f;
+      border-radius: 4px;
+    }
+    #nextButton{
+      position: static !important;
+    }
+    #prevButton{
+      position: static !important;
+    }
+    
     .mainPanel {}
 
     .mainPanel .main {}
@@ -356,6 +365,81 @@
       padding-top: 5px !important;
     }
 
+    #pagination{
+      bottom: 85.25px !important;
+    }
+    .largeTile{
+      top: 30px !important;
+    }
+    
+    #pagination li a {
+      top: 0;
+      left: 0;
+      width: 15px !important;
+      height: 15px !important;
+      outline: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      background-color: rgba(255,255,255,0.3);
+      text-indent: -0em !important;
+      cursor: pointer;
+      position: '' !important;
+      -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 8px;
+    }
+    #pagination li a::after {
+      content: '';
+      background: #ffffffc2 !important;
+    }
+    .largeTile article {
+      height: 220px !important;
+      transition: 0.4s ease-in-out;
+    }
+    .textContent p{
+      opacity: 0 !important;
+    }
+    .largeTile article:hover {
+      height: 360px !important;
+      transition: 0.4s ease-in-out;
+    }
+    .largeTile article:hover .textContent p{
+      opacity: 1 !important;
+      transition: 0.4s ease-in-out;
+    }
+    .rectArrowButton{
+      background-color: #387cff;
+      padding-top: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0px 20px;
+    }
+    .d-none{
+      display: none !important;
+    }
+    .paginationFlex{
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .pageTitle{
+      position: relative;
+      width: 100%;
+      margin-top: 100px;
+    }
+    .pageTitle h1{
+      color: white;
+      text-align: center;
+      width: 100%;
+    }
+    .selected{
+      display: inline-block !important;
+    }
+
     @media only screen and (min-width:200px) and (max-width:991px) {
       .navMain{
         top: 150px !important;
@@ -364,6 +448,7 @@
         min-width: fit-content !important;
         width: fit-content !important;
       }
+      
       /* #backButton{
         display: block !important;
       }
@@ -415,7 +500,10 @@
     <!-- About / Bio Part-->
 
     <section id="About" class="largeTile">
-      
+      <!-- <div class="pageTitle">
+        <h1>About Me</h1>
+        <p style="color: gainsboro; font-size: 15px; text-align: center; width: 100%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur omnis perferendis, aperiam architecto doloribus dolorem laborum nemo voluptatibus ipsam!</p>
+      </div> -->
       <div class="container">
         <article class="mainIcon" id="Easin">
           <div class="mainPanel">
@@ -437,6 +525,55 @@
                 contribute my knowledge and skills to the organization's success and improve my technical ability while
                 being innovative and resourceful.</p>
             </div>
+            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+          </div>
+          <div class="infoPanel">
+            <div class="textContent">
+              <h2>Notable Courses</h2>
+              <ul class="noIcon column2 smaller">
+                <li><a href="https://en.wikipedia.org/wiki/Interaction_design" target="_blank">Interaction Design</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/User_experience_design" target="_blank">UX Design &
+                    Research</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Information_architecture" target="_blank">Information
+                    Architecture</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ubiquitous_computing" target="_blank">Pervasive & Ubiquitous
+                    Interaction Design</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Information_visualization" target="_blank">Information
+                    Visualization</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Social_computing" target="_blank">Social Computing Design</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Data_structure" target="_blank">Data Structures</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">Algorithms</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Discrete_mathematics" target="_blank">Discrete
+                    Mathematics</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Digital_electronics" target="_blank">Digital Logic Design</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Automata_theory" target="_blank">Automata and
+                    Computability</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Operating_system" target="_blank">Operating Systems</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Computer_architecture" target="_blank">Computer
+                    Architecture</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Database_design" target="_blank">Database Systems</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Computer_network" target="_blank">Computer Networks</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Artificial
+                    Intelligence</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Computer_graphics" target="_blank">Computer Graphics</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Software_engineering" target="_blank">Software
+                    Engineering</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">Natural Language
+                    Processing</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Robotics" target="_blank">Robotics & Intelligent Systems</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Very-large-scale_integration" target="_blank">VLSI Design</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Signal_(electronics)" target="_blank">Signals and Systems</a>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Compiler_construction" target="_blank">Compiler Design</a>
+                </li>
+              </ul>
+            </div>
+            <div class="infoButtonClose animated"><i class="fa fa-times-circle"></i></div>
           </div>
         </article>
 
@@ -1853,7 +1990,7 @@
         </a> </div>
     </div>
 
-    <div id="prevButton" class="rectArrowButton"> <a class="prev" href="#"> <span class="icon-wrap"><svg class="icon"
+    <!-- <div id="prevButton" class="rectArrowButton"> <a class="prev" href="#"> <span class="icon-wrap"><svg class="icon"
             width="22" height="22" viewBox="0 0 64 64">
             <use xlink:href="#arrow-left-1" />
           </svg></span>
@@ -1861,8 +1998,8 @@
           <h3><i class="fa fa-arrow-circle-left"></i> Previous</h3>
           <div class="thumbnail"></div>
         </div>
-      </a> </div>
-    <div id="nextButton" class="rectArrowButton"> <a class="next" href="#"> <span class="icon-wrap"><svg class="icon"
+      </a> </div> -->
+    <!-- <div id="nextButton" class="rectArrowButton"> <a class="next" href="#"> <span class="icon-wrap"><svg class="icon"
             width="22" height="22" viewBox="0 0 64 64">
             <use xlink:href="#arrow-right-1" />
           </svg></span>
@@ -1870,11 +2007,27 @@
           <h3>Next <i class="fa fa-arrow-circle-right"></i></h3>
           <div class="thumbnail"></div>
         </div>
-      </a> </div>
-    <div id="pagination">
-      <ul>
-        <li class="current"><a href="#" data-index="1">1</a></li>
-      </ul>
+      </a> </div> -->
+    <div>
+      
+      <div id="pagination" class="paginationFlex">
+        <div id="prevButton" class="rectArrowButton"> 
+          <svg class="icon"
+          width="22" height="22" viewBox="0 0 64 64">
+            <use xlink:href="#arrow-left-1" />
+          </svg>
+        </div>
+        <ul>
+         
+        </ul>
+        <div id="nextButton" class="rectArrowButton">
+          <svg class="icon"
+            width="22" height="22" viewBox="0 0 64 64">
+            <use xlink:href="#arrow-right-1" />
+          </svg>
+        </div>
+      </div>
+      
     </div>
 
     <!-- ado ki amr jonno lagbe??
