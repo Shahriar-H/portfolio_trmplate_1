@@ -30,7 +30,7 @@
   <meta name="author" content="Wahidur Rahman Easin">
   <meta name="copyright" content="Copyright 2024 Wahidur Rahman Easin">
 
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="shortcut icon" href="images/Processor-logo-for-website-1.png">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:300,300italic,700"
@@ -348,6 +348,9 @@
     #prevButton{
       position: static !important;
     }
+    #backButton{
+      top: 75px !important;
+    }
     
     .mainPanel {}
 
@@ -366,10 +369,10 @@
     }
 
     #pagination{
-      bottom: 85.25px !important;
+      bottom: 65.25px !important;
     }
     .largeTile{
-      top: 30px !important;
+      top: 50px !important;
     }
     
     #pagination li a {
@@ -421,15 +424,18 @@
     .d-none{
       display: none !important;
     }
+    
     .paginationFlex{
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
     }
     .pageTitle{
-      position: relative;
+      position: absolute;
       width: 100%;
-      margin-top: 100px;
+      margin-top: 90px;
+      z-index: 999999;
+      padding: 10px;
     }
     .pageTitle h1{
       color: white;
@@ -438,6 +444,12 @@
     }
     .selected{
       display: inline-block !important;
+    }
+    .bi-arrow-return-right{
+      color: gray !important;
+    }
+    #intro{
+      transform: translate3d(0,0,0) !important;
     }
 
     @media only screen and (min-width:200px) and (max-width:991px) {
@@ -490,20 +502,26 @@
         <a href="#About"><span data-hover="Bio">About</span></a>
         <a href="#Expertise"><span data-hover="Skills">Expertise</span></a>
         <a href="#Experience"><span data-hover="Jobs">Experience</span></a>
-        <a href="#Projects"><span data-hover="Work">Projects</span></a> <a href="#Publications"><span
+        <a href="#Projects"><span data-hover="Work">Projects</span></a> 
+        <a href="#Publications"><span
             data-hover="Journal">Publications</span></a>
       </nav>
     </header>
+    
+
+    <div id="headerTitle" class="pageTitle d-none">
+      <h1 id="mainTitle">About Me</h1>
+      <p id="subtitle" style="color: gainsboro; font-size: 15px; text-align: center; width: 100%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur omnis perferendis, aperiam architecto doloribus dolorem laborum nemo voluptatibus ipsam!</p>
+    </div>
+
+    
 
 
 
     <!-- About / Bio Part-->
 
     <section id="About" class="largeTile">
-      <!-- <div class="pageTitle">
-        <h1>About Me</h1>
-        <p style="color: gainsboro; font-size: 15px; text-align: center; width: 100%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur omnis perferendis, aperiam architecto doloribus dolorem laborum nemo voluptatibus ipsam!</p>
-      </div> -->
+      
       <div class="container">
         <article class="mainIcon" id="Easin">
           <div class="mainPanel">
@@ -525,7 +543,7 @@
                 contribute my knowledge and skills to the organization's success and improve my technical ability while
                 being innovative and resourceful.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -589,7 +607,8 @@
                 a focus on UI/UX design and a Bachelors degree in Computer Science from BRAC University. Flip card for
                 the list of notable courses.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <!-- <i class="fa fa-info-circle"></i> -->
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -653,7 +672,7 @@
                 leadership roles in local and national levels. Flip to see the list of organizations I had been involved
                 with.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
 
           <div class="infoPanel">
@@ -701,7 +720,7 @@
               <p>Details of the awards are in <a href="https://www.linkedin.com/in/wahidur-r-easin"
                   data-hover="LinkedIn" target="_blank">LinkedIn</a>.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
 
           <div class="infoPanel">
@@ -806,7 +825,7 @@
                 a focus on UI/UX design and a Bachelors degree in Computer Science from BRAC University. Flip card for
                 the list of notable courses.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -868,7 +887,7 @@
                 hobby. Today, I am a designer of user interfaces, interactions, experiences, visualizations and various
                 other visual contents as well as 3D modeling and motion graphics/animations.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -916,7 +935,7 @@
                 desktop and mobile devices. I not only develop software solutions, but also hardware prototypes. My
                 primary interest is in the intersection between engineering, art and human interafces.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -959,7 +978,7 @@
                 hobby. Today, I am a designer of user interfaces, interactions, experiences, visualizations and various
                 other visual contents as well as 3D modeling and motion graphics/animations.</p>
             </div>
-            <div class="infoButton animated"><i class="fa fa-info-circle"></i></div>
+            <div class="infoButton animated"><i class="bi bi-arrow-return-right"></i></div>
           </div>
           <div class="infoPanel">
             <div class="textContent">
@@ -2084,6 +2103,11 @@
     </audio>
 
   </div>
+  <!-- <script>
+    const headerTitle = document.querySelector('#headerTitle')
+    const section = document.querySelectorAll('section')
+    console.log(section[0]);
+  </script> -->
 </body>
 
 </html>
